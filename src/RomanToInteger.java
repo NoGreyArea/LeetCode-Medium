@@ -16,11 +16,7 @@ public class RomanToInteger {
 		     map.put('D',500);
 		     map.put('M',1000);
 		    int result=map.get(s.charAt(s.length()-1));
-		    System.out.println("Key\t\tValue\n=================================");
-		    for(Entry<Character, Integer> hm : map.entrySet()) {
-		    	
-		    	System.out.printf("%c\t\t%d\n",hm.getKey(),hm.getValue());
-		    }
+		    
 		    for(int i=s.length()-1;i>0;i--)
 		    {
 		        if(map.get(s.charAt(i))<=map.get(s.charAt(i-1)))
